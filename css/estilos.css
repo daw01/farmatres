@@ -1,0 +1,363 @@
+/*Css General para toda la pagina*/
+
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height: 1;}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+.clear:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+
+body {
+	background: url(../img/background.jpg);
+	font-family: verdana;
+	font-size: 14px;
+	line-height: 1.3em;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1{
+	font-size: 24px;
+	color: #e86031;
+	padding: 5px 10px;
+	margin: 0px 0px 10px 0px;
+	text-align: center;
+}
+
+h2{
+	font-size: 18px;
+	color: #e86031;
+	padding: 5px 10px;
+	margin: 20px 0px 10px 0px;
+}
+
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+/*----------------------------------------CSS del contenedor----------------------------------------*/
+
+#contenedor {
+	width: 960px;
+	background-color: #eee;
+	margin: 0 auto 0 auto;
+	box-shadow: -5px 0px 15px #555, 5px 0px 15px #555;
+}
+
+/*----------------------------------------CSS del header----------------------------------------*/
+
+header {
+	width: 960px;
+	height: 200px;
+	background: url(../img/cabecera.jpg);
+}
+
+/*----------------------------------------CSS del nav----------------------------------------*/
+
+nav {
+	height: 28px;
+	color: #eee;
+	background: #799600;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #555;
+	padding-left: 0px;
+	box-shadow: 0px -4px 15px #555;
+}
+
+nav ul.menu {
+	font-size: 15px;
+	list-style: none;
+}
+
+nav ul.menu li:first-child a {
+	border-left: 0px solid #fff;
+}
+
+nav ul.menu li a {
+	height: 15px;
+	color: #ffffff;
+	float: left;
+	border-right: 1px solid #fff;
+	padding: 5px 15px 8px 15px;
+	background: #799600;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-o-transition: background 0.5s;
+	-ms-transition: background 0.5s;
+	transition: background 0.5s;
+}
+
+nav ul.menu li a:hover {
+	color: #000;
+	background: #aad900;
+}
+
+nav ul.menu li.seleccion a {
+	color: #000;
+	background: #aad900;
+}
+
+/*----------------------------------------CSS delreloj del nav----------------------------------------*/
+
+.relojEstilo {
+	color: #eee;
+	font-size: 12px;
+	padding: 6px 20px;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 1px #000;
+}
+
+/*----------------------------------------CSS del section----------------------------------------*/
+
+section {
+	width: 960px;
+	background: #d4e1ae;
+	margin-top: -1px;
+	margin-bottom: -5px;
+	display: inline-block;
+}
+
+
+article {
+	width: 689px;
+	border-left: 1px solid black;
+	padding: 10px;
+	background: #eee;
+}
+
+
+article p {
+	padding: 0px 5px 0px 5px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+article p.primera-letra:first-letter {
+	color: #799600;
+	font-size: 1.5em;
+}
+
+article p.pie-foto {
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	margin-top: -23px;
+}
+
+article img.index {
+	padding: 2px 2px 20px 2px;
+	margin: 10px 0px 0px -2px;
+	background: #e86031;
+}
+
+article a {
+	color: #e86031;
+}
+
+article a:hover {
+	text-decoration: underline;
+}
+
+.modificar {
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+/*----------------------------------------CSS del aside----------------------------------------*/
+
+aside {
+	width: 250px;
+}
+
+/*----------------------------------------Menu Aside----------------------------------------*/
+
+.aside {
+	width: 186px;
+	height: 177px;
+	padding: 20px;
+	border-radius: 20px;
+	border: 2px solid orange;
+	background: #799600;
+	margin: 10px;
+	overflow: hidden;
+	color: white;
+}
+
+.aside p {
+	margin-bottom: 10px;
+	padding: 3px;
+	background-color: orange;
+	border-radius: 5px;
+	color: #000;
+}
+
+.aside input{
+	margin-bottom: 10px;
+}
+
+/*----------------------------------------CSS del footer----------------------------------------*/
+
+footer {
+	background: #666;
+	padding: 20px;
+	border-top: 1px solid #333;
+	color: #ccc;
+	text-shadow: 1px 1px 1px #000;
+	box-shadow:inset 0 10px 15px -10px #000;
+}
+
+footer ul{
+
+}
+
+footer a {
+	color: #ccc;
+	text-shadow: 1px 1px 1px #000;
+}
+
+footer a:hover {
+	color: #eee;
+	text-shadow: 2px 2px 1px #000;
+}
+
+footer li {
+	float: left;
+	padding: 0px 10px;
+	border-left: 1px solid #bbb;
+	border-right: 1px solid #000;
+}
+
+footer li#first {
+	border-left: none;
+	padding-left: 0px;
+}
+
+footer li:last-child {
+	border-right: none;
+	padding-right: 0px;
+}
+
+footer p {
+	text-align: center;
+}
+
+#footerizqui{	
+	text-align: center;
+	margin-left: 100px;
+	width: 325px;
+	float: left;
+	color: #ccc;
+	margin-bottom: 20px;
+}
+
+#footerdere{	
+	text-align: center;
+	margin-right: 100px;
+	width: 325px;
+	float: right;
+	color: #ccc;
+	margin-bottom: 20px;
+}
+
+/*--------------------------------------Tablas de gestion--------------------------------------*/
+
+table.gestion {
+	width: 100%;
+}
+
+table.gestion thead tr {
+	background-color: orange;
+	color: #fff;
+}
+
+table.gestion tbody tr {
+	border-bottom: solid 1px grey;
+}
+
+table.gestion tbody tr td {
+	padding: 10px 0;
+}
+
+table.gestion tbody tr td:first-child {
+	padding-left: 5px;
+}
+
+table.gestion tbody tr td:nth-last-child(-n+3), table.productos tbody tr td:nth-child(4) {
+	text-align: center;
+}
+
+table.productos tbody tr td:nth-child(2), table.productos tbody tr td:nth-child(3) {
+	text-align: right;
+}
+ .img-producto {
+ 	max-width: 50px;
+ 	max-height: 50px;
+ }
+/*----------------------------------------Icono Twitter----------------------------------------*/
+
+#twitter-footer a {
+	background: url(../img/twitter-footer.png);
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	text-indent: -9999px;
+}
+
+#twitter-footer a:hover {
+	background: url(../img/twitter-footer-hover.png);
+}
+
+/*----------------------------------------Icono Facebook----------------------------------------*/
+
+#facebook-footer a {
+	background: url(../img/facebook-footer.png);
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	text-indent: -9999px;
+}
+
+#facebook-footer a:hover {
+	background: url(../img/facebook-footer-hover.png);
+}
+
+/*----------------------------------------Icono Google----------------------------------------*/
+
+#google-footer a {
+	background: url(../img/google-footer.png);
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	text-indent: -9999px;
+}
+
+#google-footer a:hover {
+	background: url(../img/google-footer-hover.png);
+}
+
+/*----------------------------------------Icono Youtube----------------------------------------*/
+
+#youtube-footer a {
+	background: url(../img/youtube-footer.png);
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	text-indent: -9999px;
+}
+
+#youtube-footer a:hover {
+	background: url(../img/youtube-footer-hover.png);
+}
